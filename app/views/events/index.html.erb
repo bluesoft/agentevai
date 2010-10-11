@@ -3,8 +3,8 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Startdate</th>
-    <th>Enddate</th>
+    <th>Date</th>
+    <th>People</th>
     <th>Local</th>
     <th></th>
     <th></th>
@@ -14,8 +14,8 @@
 <% @events.each do |event| %>
   <tr>
     <td><%= event.name %></td>
-    <td><%= event.startDate %></td>
-    <td><%= event.endDate %></td>
+    <td><%= event.startDate %> to <%= event.endDate %></td>
+    <td><%= event.people.collect {|person| person.name }.join(',') %></td>
     <td><%= event.local %></td>
     <td><%= link_to 'Show', event %></td>
     <td><%= link_to 'Edit', edit_event_path(event) %></td>

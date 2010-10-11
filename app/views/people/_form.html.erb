@@ -16,10 +16,11 @@
     <%= f.text_field :name %>
  </div>
 
-  <div class="field">
+  <div class="field">	
 		<%= f.label :team_id %><br />
 		<%= f.select(:team_id,options_from_collection_for_select(@teams,:id,:name)) %>	
-	</div>
+  </div>
+	
 
  <div class="actions">	
     <%= f.submit %>

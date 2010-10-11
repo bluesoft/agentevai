@@ -27,6 +27,14 @@
     <%= f.label :local %><br />
     <%= f.text_field :local %>
   </div>
+
+	<% if @people %>
+		<% @people.each do | person | %>	
+			<%= check_box_tag('person_ids[]', person.id, @event.people.include?(person))  %>
+			<%= person.name %>
+		<% end %>
+	<% end %>
+
   <div class="actions">
     <%= f.submit %>
   </div>

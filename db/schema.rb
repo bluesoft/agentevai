@@ -21,16 +21,16 @@ ActiveRecord::Schema.define(:version => 20101011135805) do
     t.datetime "updated_at"
   end
 
+  create_table "events_people", :id => false, :force => true do |t|
+    t.integer "event_id"
+    t.integer "person_id"
+  end
+
   create_table "people", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "team_id"
-  end
-
-  create_table "people_events", :id => false, :force => true do |t|
-    t.integer "person_id"
-    t.integer "event_id"
   end
 
   create_table "teams", :force => true do |t|
