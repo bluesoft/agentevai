@@ -10,8 +10,18 @@
       </ul>
     </div>
   <% end %>
+ 
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+ </div>
 
-  <div class="actions">
+  <div class="field">
+		<%= f.label :team_id %><br />
+		<%= f.select(:team_id,options_from_collection_for_select(@teams,:id,:name)) %>	
+	</div>
+
+ <div class="actions">	
     <%= f.submit %>
   </div>
 <% end %>
