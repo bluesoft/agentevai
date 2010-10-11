@@ -8,7 +8,7 @@ function goTo(url){
 
 function createMenu(){
 	$("#menu").buildMenu({
-      iconPath:"ico/",
+      iconPath:"images/icons",
       hasImages:true
     });
 }

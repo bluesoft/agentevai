@@ -10,17 +10,20 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-	<div id="header" class="ui-state-active">
-		<h1 id="title">A Gente Vai!</h1>
-	</div>
 	<table id="menu" class="rootVoices" cellspacing='0' cellpadding='0' border='0'>
 		<tr>
-	    	<td class="rootVoice {menu: 'empty'}" onclick="goTo('/teams');">Teams</td>
-	    	<td class="rootVoice {menu: 'empty'}" onclick="goTo('/people');" >People</td>
-	    	<td class="rootVoice {menu: 'empty'}" onclick="goTo('/events');" >Events</td>
+	    	<td class="rootVoice {menu: 'empty'}" onclick="goTo('/teams');"><%= image_tag "icons/team.png" %><%= t('teams.teams')%></td>
+	    	<td class="rootVoice {menu: 'empty'}" onclick="goTo('/people');" ><%= image_tag "icons/person.png" %><%= t('people.people')%></td>
+	    	<td class="rootVoice {menu: 'empty'}" onclick="goTo('/events');" ><%= image_tag "icons/event.png" %><%= t('events.events')%></td>
 		</tr>
 	</table>
 
-	<%= yield %>	
+	<div id="header" class="ui-state-active">
+		<%= image_tag "logo.png" %>
+	</div>
+
+	<div id="content">
+		<%= yield %>
+	</div>	
 </body>
 </html>

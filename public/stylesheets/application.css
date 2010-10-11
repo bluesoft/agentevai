@@ -1,5 +1,13 @@
+body {
+	margin:0px;
+}
+
 #header { 
 	text-align:center;
+	border:none;
+}
+#header table {
+	border:none;
 }
 
 #header h1 {
@@ -14,4 +22,9 @@ table {
 
 table tr th {
 	border: 1px solid #d8dcdf; background: #eeeeee url(images/ui-bg_highlight-hard_100_eeeeee_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #004276;
+}
+
+#content {
+	width: 70%;
+	margin:auto;
 }

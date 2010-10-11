@@ -18,6 +18,11 @@
   cursor: pointer;
 }
 
+.rootVoice img {
+	padding-right:10px;
+	vertical-align:middle;
+}
+
 .rootVoices td.rootVoice.selected{
 	background: orangered url("images/bgnd_sel_4.png");
 	padding:8px;

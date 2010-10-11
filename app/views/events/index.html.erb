@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Name</th>
+    <th><%= t('events.name') %></th>
     <th>Date</th>
     <th>People</th>
     <th>Local</th>
@@ -14,16 +14,16 @@
 <% @events.each do |event| %>
   <tr>
     <td><%= event.name %></td>
-    <td><%= event.startDate %> to <%= event.endDate %></td>
+    <td><%= event.start_date %> to <%= event.end_date %></td>
     <td><%= event.people.collect {|person| person.name }.join(',') %></td>
     <td><%= event.local %></td>
-    <td><%= link_to 'Show', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to t('general.show'), event %></td>
+    <td><%= link_to t('general.edit'), edit_event_path(event) %></td>
+    <td><%= link_to t('general.destroy'), event, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Event', new_event_path %>
+<%= link_to t('events.new_event'), new_event_path %>

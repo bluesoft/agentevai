@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(:version => 20101011135805) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
-    t.date     "startDate"
-    t.date     "endDate"
+    t.date     "start_date"
+    t.date     "end_date"
     t.string   "local"
     t.datetime "created_at"
     t.datetime "updated_at"

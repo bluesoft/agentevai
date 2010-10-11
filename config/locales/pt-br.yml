@@ -1,0 +1,17 @@
+pt-br:
+  general:
+    show: "Exibir"
+    destroy: "Excluir"
+    edit: "Editar"
+  events:
+    name: "Nome"
+    event: "Evento"
+    events: "Eventos"
+    new_event: "Novo Evento"
+  people:
+    name: "Nome"
+    people: "Pessoas"
+    new_person: "Nova Pessoa"
+  teams:
+    teams: "Equipes"
+    name: "Nome"
