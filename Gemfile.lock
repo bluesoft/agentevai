@@ -38,6 +38,7 @@ GEM
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
+    inploy (1.6.8)
     mail (2.2.6.1)
       activesupport (>= 2.3.6)
       mime-types
@@ -76,6 +77,7 @@ PLATFORMS
 
 DEPENDENCIES
   inherited_resources (= 1.1.2)
+  inploy
   pg
   rails (= 3.0.0)
   sqlite3-ruby

@@ -5,6 +5,7 @@ gem 'rails', '3.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'inploy'
 gem 'pg'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'inherited_resources', '1.1.2'
