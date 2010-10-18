@@ -16,12 +16,10 @@ test:
   timeout: 5000
 
 production:
-    adapter: postgresql
-    host: server
-    port: 5432
-    username: agentevai
-    password: 8437
-    database: agentevai
-    schema_search_path: public
-    encoding: utf8
-    template: template0
+  encoding: unicode
+  adapter: postgresql
+  username: username
+  port: 5432
+  host: agentevai
+  database: agentevai
+  password: password
