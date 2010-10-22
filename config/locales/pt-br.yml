@@ -3,8 +3,14 @@ pt-br:
     show: "Exibir"
     destroy: "Excluir"
     edit: "Editar"
+    back: "Voltar"
+    date: "Data"
+    local: "Local"
+    editing: "Editando"
   events:
     name: "Nome"
+    start_date: "Primeiro dia"
+    end_date: "Último dia"
     event: "Evento"
     events: "Eventos"
     new_event: "Novo Evento"
@@ -15,3 +21,17 @@ pt-br:
   teams:
     teams: "Equipes"
     name: "Nome"
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "Não foi possível gravar {{model}}: 1 erro"
+          other: "Não foi possível gravar {{model}}: {{count}} erros."
+        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      models:
+        event:
+          attributes:
+            start_date: 
+              blank: "Informe a data de inicio do evento"
+            end_date:
+              blank: "Informe a data do fim do evento"

@@ -1,6 +1,6 @@
-<h1>Editing event</h1>
+<h1><%= t('general.editing') %> <%= t('events.events') %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+<%= link_to t('general.show'), @event %> |
+<%= link_to t('general.back'), events_path %>

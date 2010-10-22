@@ -3,8 +3,12 @@ class EventsController < InheritedResources::Base
      
      respond_to :html, :xml, :json
      
+     def index
+       @events = Event.order("name asc")
+     end
+     
      def edit
-       @people = Person.all
+       @people = Person.order("name asc")
        super
      end
      
@@ -16,7 +20,7 @@ class EventsController < InheritedResources::Base
        @event.people.clear
        params[:person_ids].each do |person_id|
         @event.people << Person.find(person_id)
-       end
+      end
 
 
        if @event.save
